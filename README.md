@@ -14,3 +14,8 @@
 - consumer端微服务：cloud-consumer-order80
 - 工程重构：cloud-api-commons 
     将实体类提取出来，并打包，作为依赖移入上述两个服务即可。
+
+## 单个 Eureka 服务中心
+
+- cloud-eureka-server7001
+- 将 cloud-provider-payment8001 和 cloud-consumer-order80 注册到服务中心。
