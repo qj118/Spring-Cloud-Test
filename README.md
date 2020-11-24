@@ -19,3 +19,8 @@
 
 - cloud-eureka-server7001
 - 将 cloud-provider-payment8001 和 cloud-consumer-order80 注册到服务中心。
+
+## Eureka 集群
+
+- cloud-eureka-server7001 和 cloud-eureka-server7002 相互注册
+- cloud-provider-payment8002 服务名 payment8001 相同，端口号不同的相同服务（验证负载均衡）

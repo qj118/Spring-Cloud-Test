@@ -22,4 +22,8 @@ eureka:
     # 抓取已有的的注册信息（用于集群负载均衡）
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:7001/eureka
+      # defaultZone: http://localhost:7001/eureka # 单个 eureka
+      defaultZone: http://eureka7001.com:7001/eureka, http://eureka7002.com:7001/eureka # eureka 集群
+  instance:
+    instance-id: payment8001
+    prefer-ip-address: true
