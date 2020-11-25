@@ -13,3 +13,8 @@ eureka:
       # 设置与 Eureka Server 交互的地址，查询服务和注册服务都需要依赖这个服务
       # defaultZone: http://${eureka.instance.hostname:${server.port}/eureka/
       defaultZone: http://eureka7002.com:7002/eureka # 与集群中其他 server 相互注册
+  # server:
+    # 关闭 Eureka 自我保护机制
+    # enable-self-preservation: false
+    # 设置接受心跳时间间隔，单位为毫秒
+    # eviction-interval-timer-in-ms: 2000

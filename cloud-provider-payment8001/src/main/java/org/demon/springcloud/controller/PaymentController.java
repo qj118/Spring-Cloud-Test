@@ -1,13 +1,17 @@
 package org.demon.springcloud.controller;
 
+
 import lombok.extern.slf4j.Slf4j;
 import org.demon.springcloud.entities.CommonResult;
 import org.demon.springcloud.entities.Payment;
 import org.demon.springcloud.service.PaymentService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author demon
@@ -21,6 +25,9 @@ public class PaymentController {
 
     @Value("${server.port}")
     private String serverPort;
+
+    @Resource
+    private DiscoveryClient discoveryClient;
 
     @PostMapping("/payment/create")
     public CommonResult create(@RequestBody Payment payment){
@@ -42,5 +49,20 @@ public class PaymentController {
         }else{
             return new CommonResult(444, "无相应记录，查询id为" + id);
         }
+    }
+
+    @GetMapping("/payment/discovery")
+    public Object discovery(){
+        // 获取注册在该服务所在的注册中心的所有服务
+        List<String> services = discoveryClient.getServices();
+        for (String service : services) {
+            log.info("****已注册服务类型：" + service + ", 包含以下实例：");
+            // 获取服务 id 包含的所有的服务实例
+            List<ServiceInstance> instances = discoveryClient.getInstances(service);
+            for (ServiceInstance instance : instances) {
+                log.info("\t" + instance.getServiceId() + "\t" + instance.getHost() + "\t" + instance.getPort() + "\t" + instance.getUri());
+            }
+        }
+        return this.discoveryClient;
     }
 }
