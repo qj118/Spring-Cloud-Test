@@ -6,7 +6,7 @@ import org.demon.springcloud.entities.Payment;
 
 /**
  * @author demon
- * @create 2020-11-20 15:04
+ * @create 2020-11-30 16:05
  */
 @Mapper
 public interface PaymentDao {

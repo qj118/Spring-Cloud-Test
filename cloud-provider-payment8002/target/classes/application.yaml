@@ -7,7 +7,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql:///test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql:///test?serverTimezone=UTC
     username: root
     password: 1234567
 
@@ -17,13 +17,10 @@ mybatis:
 
 eureka:
   client:
-    # 将自己注册进 eureka server
-    register-with-eureka: true
-    # 抓取已有的的注册信息（用于集群负载均衡）
     fetch-registry: true
+    register-with-eureka: true
     service-url:
-      # defaultZone: http://localhost:7001/eureka # 单个 eureka
-      defaultZone: http://eureka7001.com:7001/eureka, http://eureka7002.com:7001/eureka # eureka 集群
+      defaultZone: http://eureka7001.com:7001/eureka, http://eureka7002.com:7001/eureka
   instance:
     instance-id: payment8002
     prefer-ip-address: true
