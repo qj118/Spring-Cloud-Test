@@ -36,3 +36,9 @@
 在以下两个模块中进行了相关配置：
 - cloud-eureka-server7001
 - cloud-provider-payment8001
+
+## ZooKeeper 相关
+
+- cloud-provider-payment8004 提供者注册服务
+- cloud-consumerzk-order80 消费者服务
+
