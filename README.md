@@ -42,3 +42,8 @@
 - cloud-provider-payment8004 提供者注册服务
 - cloud-consumerzk-order80 消费者服务
 
+## Consul 相关
+
+- cloud-provider-payment8006 提供者服务
+- cloud-consumerconsul-order80 消费者服务
+
