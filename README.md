@@ -47,3 +47,11 @@
 - cloud-provider-payment8006 提供者服务
 - cloud-consumerconsul-order80 消费者服务
 
+## Ribbon 相关
+
+- RestTemplate 的使用 （cloud-consumer-order80 中修改）
+- 负载均衡算法的替换（cloud-consumer-order80 中修改）
+- 自定义负载均衡算法（cloud-consumer-order80 中修改，在8001和8002做相应接口支持）
+
+  如果想要测试通过，需要将配置类中的 restTemplate 上的 `@LoadBalanced` 注解注释掉。
+
