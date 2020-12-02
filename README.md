@@ -55,3 +55,7 @@
 
   如果想要测试通过，需要将配置类中的 restTemplate 上的 `@LoadBalanced` 注解注释掉。
 
+## Feign 相关
+
+- 消费端 cloud-consumer-feign-order80
+- 在 8001 中添加超时测试
