@@ -59,3 +59,10 @@
 
 - 消费端 cloud-consumer-feign-order80
 - 在 8001 中添加超时测试
+
+## Hystrix 相关
+
+修改 7001 为不适用集群模式。
+- 提供者：cloud-provider-hystrix-payment8001
+- 消费者：cloud-consumer-feign-hystrix-order80
+- 监控者：cloud-consumer-hystrix-dashboard9001
