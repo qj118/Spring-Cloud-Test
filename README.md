@@ -62,7 +62,12 @@
 
 ## Hystrix 相关
 
-修改 7001 为不适用集群模式。
+修改 7001 为不使用集群模式。
 - 提供者：cloud-provider-hystrix-payment8001
 - 消费者：cloud-consumer-feign-hystrix-order80
 - 监控者：cloud-consumer-hystrix-dashboard9001
+
+## Gateway 相关
+
+修改 8001 和 8002 不使用集群模式。
+用 cloud-gateway9527 网关访问 8001 和 8002 服务。
