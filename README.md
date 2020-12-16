@@ -71,3 +71,9 @@
 
 修改 8001 和 8002 不使用集群模式。
 用 cloud-gateway9527 网关访问 8001 和 8002 服务。
+
+## Config 相关
+
+- 配置中心（服务端）：cloud-config-center-3344
+- 客户端：cloud-config-client-3355
+- [配置github](https://github.com/qj118/spring-cloud-config-demo)
