@@ -12,6 +12,12 @@ spring:
       profile: dev # 配置文件 profile
       uri: http://localhost:3344 # 配置中心地址
 
+rabbitmq:
+  host: localhost
+  port: 15672
+  username: guest
+  passord: guest
+
 eureka:
   client:
     fetch-registry: true

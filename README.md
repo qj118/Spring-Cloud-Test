@@ -77,3 +77,10 @@
 - 配置中心（服务端）：cloud-config-center-3344
 - 客户端：cloud-config-client-3355
 - [配置github](https://github.com/qj118/spring-cloud-config-demo)
+
+## Bus 相关
+
+- 配置中心（服务端）：cloud-config-center-3344
+- 客户端：cloud-config-client-3355, cloud-config-client-3366
+
+注意：测试时启动 rabbitmq
