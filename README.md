@@ -91,3 +91,7 @@
 - 消费者：
     - cloud-stream-rabbitmq-consumer8802
     - cloud-stream-rabbitmq-consumer8803
+    
+## Sleuth 相关
+
+修改 cloud-provider-payment8001 和 cloud-consumer-order80 支持 sleuth 链路追踪。

@@ -83,4 +83,10 @@ public class PaymentController {
         }
         return serverPort;
     }
+
+    // 验证链路追踪
+    @GetMapping("/payment/zipkin")
+    public String testZipkin(){
+        return "我是用来链路跟踪测试的！";
+    }
 }
