@@ -12,17 +12,16 @@ spring:
           search-paths:
             - spring-cloud-config-demo # 搜索目录
       label: master # 指定分支
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
-
-rabbitmq:
-  host: localhost
-  port: 15672
-  username: guest
-  passord: guest
 
 # rabbitmq 相关配置，暴露 bus 刷新配置的端点
 management:

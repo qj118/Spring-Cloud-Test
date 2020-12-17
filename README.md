@@ -84,3 +84,10 @@
 - 客户端：cloud-config-client-3355, cloud-config-client-3366
 
 注意：测试时启动 rabbitmq
+
+## Stream 相关
+
+- 生产者：cloud-stream-rabbitmq-provider8801
+- 消费者：
+    - cloud-stream-rabbitmq-consumer8802
+    - cloud-stream-rabbitmq-consumer8803
