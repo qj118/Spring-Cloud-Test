@@ -95,3 +95,10 @@
 ## Sleuth 相关
 
 修改 cloud-provider-payment8001 和 cloud-consumer-order80 支持 sleuth 链路追踪。
+
+## Nacos 相关
+
+- cloudalibaba-config-client3377
+- cloudalibaba-consumer-order83
+- cloudalibaba-provider-payment9001
+- cloudalibaba-provider-payment9002
