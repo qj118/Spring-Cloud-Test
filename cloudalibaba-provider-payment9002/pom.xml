@@ -21,6 +21,15 @@
             <artifactId>simpleclient</artifactId>
             <version>0.4.0</version>
         </dependency>
+        <!--
+            针对问题 failed to req API:/nacos/v1/ns/instance after all servers，
+            将默认的 1.1.1 版本更新成为 1.1.4 及其以后的版本
+        -->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>1.1.4</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
