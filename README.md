@@ -102,3 +102,12 @@
 - cloudalibaba-consumer-order83
 - cloudalibaba-provider-payment9001
 - cloudalibaba-provider-payment9002
+
+## Sentinel 相关
+
+- cloudalibaba-sentinel-service8401 sentinel 控制台相关配置测试使用；
+- 服务提供者
+    - cloudalibaba-provider-payment9003
+    - cloudalibaba-provider-payment9004
+- 服务消费者 cloudalibaba-consumer-order84 
+    用于 @SentinelResource 的相关测试及 OpenFeign 的整合

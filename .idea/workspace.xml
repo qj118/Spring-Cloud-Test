@@ -23,9 +23,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec6a3ff5-7b04-4fb1-b256-e9f0b9bc3ed8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-order84/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-order84/src/main/java/org/demon/springcloud/OrderMain84.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-order84/src/main/java/org/demon/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-order84/src/main/java/org/demon/springcloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-order84/src/main/java/org/demon/springcloud/service/PaymentFallbackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-order84/src/main/java/org/demon/springcloud/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-order84/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/java/org/demon/springcloud/PaymentMain9003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/java/org/demon/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/java/org/demon/springcloud/PaymentMain9004.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/java/org/demon/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/org/demon/springcloud/MainApp8401.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/org/demon/springcloud/controller/FlowLimitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/org/demon/springcloud/controller/RateLimitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/org/demon/springcloud/myhandler/CustomerBlockHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba-provider-payment9001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +122,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigClientMain3377">
+  <component name="RunManager" selected="Spring Boot.OrderMain84">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConfigCenterMain3344" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-center-3344" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.ConfigCenterMain3344" />
@@ -164,6 +198,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainApp8401" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-sentinel-service8401" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.demon.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.MainApp8401" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderConsulMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumerconsul-order80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.OrderConsulMain80" />
@@ -192,15 +239,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderMain83" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderMain83" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloudalibaba-consumer-order83" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.OrderMain83" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderMain84" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-consumer-order84" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.demon.springcloud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.OrderMain83" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.OrderMain84" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -247,14 +301,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentMain9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="PaymentMain9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloudalibaba-provider-payment9001" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.demon.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.PaymentMain9001" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -273,6 +321,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentMain9004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-provider-payment9004" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.demon.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.PaymentMain9004" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderMain9003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloudalibaba-provider-payment9003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.PaymentMain9003" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StreamMQMain8801" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-stream-rabbitmq-provider8801" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.StreamMQMain8801" />
@@ -287,14 +355,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamMQMain8803" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="StreamMQMain8803" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-stream-rabbitmq-consumer8803" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.demon.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.demon.springcloud.StreamMQMain8803" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -302,11 +364,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MainApp8401" />
+        <item itemvalue="Spring Boot.OrderMain84" />
+        <item itemvalue="Spring Boot.PaymentMain9004" />
         <item itemvalue="Spring Boot.PaymentMain9002" />
         <item itemvalue="Spring Boot.ConfigClientMain3377" />
-        <item itemvalue="Spring Boot.OrderMain83" />
-        <item itemvalue="Spring Boot.PaymentMain9001" />
-        <item itemvalue="Spring Boot.StreamMQMain8803" />
       </list>
     </recent_temporary>
   </component>
@@ -341,7 +403,8 @@
       <workItem from="1608168731068" duration="8248000" />
       <workItem from="1608249687554" duration="10336000" />
       <workItem from="1608530414310" duration="5139000" />
-      <workItem from="1608595715121" duration="4426000" />
+      <workItem from="1608595715121" duration="12412000" />
+      <workItem from="1608681574861" duration="16156000" />
     </task>
     <servers />
   </component>
@@ -372,10 +435,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="#Project_Structure/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1607999861419" />
-    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1608101915368">
+    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1608702633388">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608101915368" />
+    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608702633388" />
     <state x="2430" y="443" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606699734605">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -384,46 +447,46 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2575" y="330" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608534200500" />
-    <state width="1474" height="467" key="GridCell.Tab.0.bottom" timestamp="1608603338710">
+    <state width="1474" height="333" key="GridCell.Tab.0.bottom" timestamp="1608709124716">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1474" height="374" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606892604447" />
-    <state width="1474" height="467" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608603338710" />
-    <state width="1474" height="467" key="GridCell.Tab.0.center" timestamp="1608603338710">
+    <state width="1474" height="333" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608709124716" />
+    <state width="1474" height="333" key="GridCell.Tab.0.center" timestamp="1608709124715">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1474" height="374" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606892604447" />
-    <state width="1474" height="467" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608603338710" />
-    <state width="1474" height="467" key="GridCell.Tab.0.left" timestamp="1608603338710">
+    <state width="1474" height="333" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608709124715" />
+    <state width="1474" height="333" key="GridCell.Tab.0.left" timestamp="1608709124715">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1474" height="374" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606892604447" />
-    <state width="1474" height="467" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608603338710" />
-    <state width="1474" height="467" key="GridCell.Tab.0.right" timestamp="1608603338710">
+    <state width="1474" height="333" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608709124715" />
+    <state width="1474" height="333" key="GridCell.Tab.0.right" timestamp="1608709124715">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1474" height="374" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606892604447" />
-    <state width="1474" height="467" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608603338710" />
-    <state width="1474" height="467" key="GridCell.Tab.1.bottom" timestamp="1608603338710">
+    <state width="1474" height="333" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608709124715" />
+    <state width="1474" height="333" key="GridCell.Tab.1.bottom" timestamp="1608709124716">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1474" height="374" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606892604448" />
-    <state width="1474" height="467" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608603338710" />
-    <state width="1474" height="467" key="GridCell.Tab.1.center" timestamp="1608603338710">
+    <state width="1474" height="333" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608709124716" />
+    <state width="1474" height="333" key="GridCell.Tab.1.center" timestamp="1608709124716">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1474" height="374" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606892604448" />
-    <state width="1474" height="467" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608603338710" />
-    <state width="1474" height="467" key="GridCell.Tab.1.left" timestamp="1608603338710">
+    <state width="1474" height="333" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608709124716" />
+    <state width="1474" height="333" key="GridCell.Tab.1.left" timestamp="1608709124716">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1474" height="374" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606892604447" />
-    <state width="1474" height="467" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608603338710" />
-    <state width="1474" height="467" key="GridCell.Tab.1.right" timestamp="1608603338710">
+    <state width="1474" height="333" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608709124716" />
+    <state width="1474" height="333" key="GridCell.Tab.1.right" timestamp="1608709124716">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1474" height="374" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606892604448" />
-    <state width="1474" height="467" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608603338710" />
+    <state width="1474" height="333" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608709124716" />
     <state x="2410" y="175" key="Maven.ArtifactSearchDialog" timestamp="1605854764331">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -444,17 +507,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" width="1421" height="747" maximized="true" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608169800760" />
-    <state x="2513" y="180" key="new project wizard" timestamp="1608269705551">
+    <state x="2513" y="180" key="new project wizard" timestamp="1608691918252">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2513" y="180" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608269705551" />
+    <state x="2513" y="180" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608691918252" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1607936264700">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1607936264700" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607995638090">
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608707261953">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1607995638090" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1608707261953" />
   </component>
 </project>
