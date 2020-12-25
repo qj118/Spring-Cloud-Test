@@ -110,4 +110,13 @@
     - cloudalibaba-provider-payment9003
     - cloudalibaba-provider-payment9004
 - 服务消费者 cloudalibaba-consumer-order84 
+
     用于 @SentinelResource 的相关测试及 OpenFeign 的整合
+    
+## Seata 相关
+
+- seata-order-service2001
+- seata-storage-service2002
+- seata-account-service2003
+
+用于模拟订单、库存和账户三方在事务管理上的策略。

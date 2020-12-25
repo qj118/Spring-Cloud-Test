@@ -13,6 +13,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/could-consumerzk-order80/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-account-service/pom.xml" />
       </set>
     </option>
   </component>
